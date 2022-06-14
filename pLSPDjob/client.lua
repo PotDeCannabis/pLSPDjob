@@ -1363,18 +1363,9 @@ function Rechercherplaquevoiture(plaquerechercher)
                             else
                                 RageUI.Button("Propriétaire : ", nil, {RightLabel = retrivedInfo.owner}, true, {
                                       onSelected = function()
-                    end
-                                    })
+                                      end
+                                })
 
-                local hashvoiture = retrivedInfo.vehicle.model
-                local nomvoituremodele = GetDisplayNameFromVehicleModel(hashvoiture)
-                local nomvoituretexte  = GetLabelText(nomvoituremodele)
-
-                                RageUI.Button("Modèle du véhicule : ", nil, {RightLabel = nomvoituretexte}, true, {
-                                      onSelected = function()
-                    end
-                                    })
-                            end
                 end, function()
                 end)
             if not RageUI.Visible(PlaqueMenu) then
