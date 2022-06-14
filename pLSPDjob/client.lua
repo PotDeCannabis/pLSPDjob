@@ -1344,7 +1344,7 @@ end
 
 
 function Rechercherplaquevoiture(plaquerechercher)
-    local PlaqueMenu = RageUI.CreateMenu("plaque d'immatriculation", "Informations")
+    local PlaqueMenu = RageUI.CreateMenu("Plaque", "Informations")
     ESX.TriggerServerCallback('pLSPDjob:getVehicleInfos', function(retrivedInfo)
     RageUI.Visible(PlaqueMenu, not RageUI.Visible(PlaqueMenu))
         while PlaqueMenu do
